@@ -5,24 +5,28 @@
   <title>映璉 & 晧誠 結婚啦｜電子喜帖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: "Noto Sans TC", sans-serif; background: #fffbe7; margin: 0; padding: 0; }
-    .container { max-width: 600px; margin: 30px auto; background: #fff; border-radius: 18px; box-shadow: 0 0 24px #e0d1b8; padding: 2em; }
-    h1 { color: #c08d38; margin-bottom: 0.2em; }
-    h2 { color: #a47b47; margin-top: 2em; }
+    body { font-family: "Noto Sans TC", sans-serif; background: #f8f3e8; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: 30px auto; background: #fffdfa; border-radius: 18px; box-shadow: 0 0 24px #e2cfc3; padding: 2em; }
+    h1 { color: #b35c1e; margin-bottom: 0.2em; letter-spacing: 0.1em; }
+    h2 { color: #7c4a1e; margin-top: 2em; }
     .info { margin-bottom: 1.5em; }
-    .date, .venue, .address { font-size: 1.1em; margin: 0.3em 0; }
-    .schedule { background: #f6e6cc; border-radius: 10px; padding: 1em; margin: 1.5em 0; }
-    .schedule ul { list-style: none; padding: 0; margin: 0; }
-    .schedule li { margin: 0.3em 0; }
+    .date, .venue, .address { font-size: 1.1em; margin: 0.3em 0; color: #7c4a1e; }
+    .schedule { background: #f3e6d0; border-radius: 10px; padding: 1em; margin: 1.5em 0; }
+    .schedule table { width: 100%; border-collapse: collapse; font-size: 1em; }
+    .schedule th, .schedule td { padding: 0.5em; text-align: left; }
+    .schedule th { background: #e7c9a9; color: #7c4a1e; }
+    .schedule td { color: #5c3a1e; }
     .photos { display: flex; gap: 10px; margin: 1.5em 0; flex-wrap: wrap; }
-    .photos img { border-radius: 10px; width: 48%; box-shadow: 0 2px 12px #eee; }
+    .photos img { border-radius: 10px; width: 48%; box-shadow: 0 2px 12px #e2cfc3; }
     .btn-survey {
-      display: inline-block; background: #c08d38; color: #fff; font-size: 1.1em;
+      display: inline-block; background: #b35c1e; color: #fffdfa; font-size: 1.1em;
       padding: 0.7em 2em; border-radius: 24px; margin-top: 1.2em; text-decoration: none;
       transition: background 0.2s;
+      letter-spacing: 0.05em;
     }
-    .btn-survey:hover { background: #a47b47; }
-    .note { color: #a47b47; font-size: 0.95em; margin-top: 1em; }
+    .btn-survey:hover { background: #7c4a1e; }
+    a { color: #b35c1e; }
+    a:hover { color: #7c4a1e; }
     @media (max-width: 600px) {
       .container { padding: 1em; }
       .photos img { width: 100%; }
@@ -33,24 +37,44 @@
   <div class="container">
     <h1>映璉 & 晧誠 結婚啦</h1>
     <div class="info">
-      <div class="date">日期時間：2025 年 11 月 2 日（週日）<br>中午 12:00 ～ 下午 3:00（UTC+8）</div>
-      <div class="venue">地點：台北萬豪酒店</div>
-      <div class="address">地址：10491台灣台北市中山區樂群二路199號</div>
-      <div class="note">交通資訊：晚點附上</div>
+      <div class="date">日期：2025 年 11 月 2 日 週日 午宴 12:00</div>
+      <div class="venue">地點：台北萬豪酒店 36F 寰宇廳</div>
+      <div class="address">地址：台北市中山區樂群二路 199 號 
+        ｜
+        <a href="https://maps.google.com/?q=台北萬豪酒店" target="_blank">Google Maps</a>
+        ｜
+        <a href="https://maps.apple.com/?address=10491,台灣台北市中山區樂群二路199號" target="_blank">Apple Maps</a>
+      </div>
+      <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=%E6%98%A0%E7%92%89%20%26%20%E6%99%A9%E8%AA%A0%20%E7%B5%90%E5%A9%9A%E5%95%A6&dates=20251102T040000Z/20251102T070000Z&details=%E5%9C%B0%E9%BB%9E%EF%BC%9A36F%20%E5%AF%B0%E5%AE%87%E5%BB%B3%0A%E6%99%82%E9%96%93%EF%BC%9A%0A-%2011%3A00~11%3A30%20%E8%AD%89%E5%A9%9A%0A-%2011%3A30~12%3A00%20%E8%BF%8E%E8%B3%93%E9%85%92%E6%9C%83%0A-%2012%3A00~15%3A00%20%E5%AE%B4%E6%9C%83&location=%E5%8F%B0%E5%8C%97%E8%90%AC%E8%B1%AA%E9%85%92%E5%BA%97%2C%2010491%E5%8F%B0%E7%81%A3%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E6%A8%82%E7%BE%A4%E4%BA%8C%E8%B7%AF199%E8%99%9F"
+         target="_blank"
+         style="display:inline-block;margin-top:0.8em;color:#fffdfa;background:#b35c1e;padding:0.5em 1.2em;border-radius:20px;text-decoration:none;font-size:1em;letter-spacing:0.05em;">
+        加到 Google 行事曆
+      </a>
     </div>
     <h2>行程表</h2>
     <div class="schedule">
-      <ul>
-        <li>11:00～11:30 證婚</li>
-        <li>11:30～12:00 迎賓酒會</li>
-        <li>12:00～15:00 宴會</li>
-      </ul>
-    </div>
-    <h2>我們的相片</h2>
-    <div class="photos">
-      <img src="photo1.jpg" alt="我們的照片1">
-      <img src="photo2.jpg" alt="我們的照片2">
-      <!-- 可以繼續新增圖片 -->
+      <table>
+        <thead>
+          <tr>
+            <th style="border-radius:8px 0 0 8px;">時間</th>
+            <th style="border-radius:0 8px 8px 0;">活動</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:00～11:30</td>
+            <td>證婚</td>
+          </tr>
+          <tr>
+            <td>11:30～12:00</td>
+            <td>迎賓酒會</td>
+          </tr>
+          <tr>
+            <td>12:00～15:00</td>
+            <td>宴會</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <a class="btn-survey" href="https://tally.so/r/3xLe4k" target="_blank">回覆出席問卷</a>
   </div>
