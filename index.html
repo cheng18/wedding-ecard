@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>映璉 & 晧誠 結婚啦｜電子喜帖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="映璉 & 晧誠 結婚電子喜帖，包含婚宴資訊、地點（台北萬豪酒店 36F 寰宇廳）、行程表與回覆問卷，歡迎親友蒞臨見證幸福時刻。">
+  <meta name="description" content="結婚電子喜帖，包含婚宴資訊、地點、行程表。">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:700&display=swap" rel="stylesheet">
   <style>
     /* ====== Layout ====== */
     body {
@@ -49,7 +50,7 @@
       text-align: center;
     }
 
-    .address {
+    .content {
       font-size: 1.1em;
       margin: 0.3em 0;
       color: #7c4a1e;
@@ -71,7 +72,7 @@
     }
 
     .role {
-      font-size: 1.05em;
+      font-size: 1.0em;
       color: #b35c1e;
       font-weight: bold;
       letter-spacing: 0.08em;
@@ -79,24 +80,26 @@
 
     .name {
       font-family: 'Noto Serif TC', serif;
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #7c4a1e;
+      font-weight: bold;
       margin: 0.2em 0;
       letter-spacing: 0.05em;
     }
 
     .name-main {
       font-family: 'Noto Serif TC', serif;
-      font-size: 1.6em;
+      font-size: 1.4em;
       color: #7c4a1e;
       font-weight: bold;
       letter-spacing: 0.05em;
       display: inline-block;
+      text-shadow: 0 1px 6px #ffe06644;
     }
 
     /* ====== Schedule Table ====== */
     .schedule {
-      background: #f3e6d0;
+      background: #f8e9d2;
       border-radius: 10px;
       padding: 1em;
       margin: 1.5em 0;
@@ -114,8 +117,9 @@
     }
 
     .schedule th {
-      background: #e7c9a9;
+      background: #e7cdb1;
       color: #7c4a1e;
+      font-weight: bold;
     }
 
     .schedule td {
@@ -131,7 +135,7 @@
       color: #7c4a1e;
     }
 
-    .btn-calendar {
+    /* .btn-calendar {
       display: inline-block;
       background: #b35c1e;
       color: #fffdfa;
@@ -147,7 +151,7 @@
     .btn-calendar:hover {
       background: #975820;
       color: #fffdfa;
-    }
+    } */
 
     /* ====== Images ====== */
     .invitation-img {
@@ -159,7 +163,7 @@
 
     /* ====== Responsive ====== */
     @media (max-width: 600px) {
-      .container { padding: 1em; }
+      .container { padding: 1em; width: 100%; }
     }
 
     @media (max-width: 300px) {
@@ -209,7 +213,7 @@
           <div class="date">2025 年 11 月 2 日 週日 午宴</div>
           <div class="venue">台北萬豪酒店 36F 寰宇廳</div>
           <!-- AddEvent Button Start -->
-          <div title="Add to Calendar" class="addeventatc" data-styling="none" style="margin-top:0.3em;background: #b35c1e;">
+          <div title="Add to Calendar" class="addeventatc" data-styling="none" style="margin-top:0.3em;background: #b35c1e;border-radius: 10px;">
             Add to Calendar
             <span class="addeventatc_icon"></span>
             <span class="start">11/02/2025 11:30 AM</span>
@@ -225,15 +229,15 @@
     </div>
 
     <h2>交通資訊</h2>
-    <div class="traffic">
-      <div class="address">地址：台北市中山區樂群二路 199 號</div>
-      <div class="address">連結：<a href="https://maps.google.com/?q=台北萬豪酒店" target="_blank">Google Maps</a>
-        ｜
-        <a href="https://maps.apple.com/?address=10491,台灣台北市中山區樂群二路199號" target="_blank">Apple Maps</a>
-      </div>
-      <div class="address">捷運：劍潭站</div>
-      <div class="note">啤酒暢飲，建議搭乘公共交通</div>
+    <div class="content">地址：台北市中山區樂群二路 199 號</div>
+    <div class="content">連結：<a href="https://maps.google.com/?q=台北萬豪酒店" target="_blank">Google Maps</a>
+      ｜
+      <a href="https://maps.apple.com/?address=10491,台灣台北市中山區樂群二路199號" target="_blank">Apple Maps</a>
     </div>
+    <div class="content">捷運：劍潭站（推薦，啤酒暢飲）</div>
+    <div class="content">停車：免費停車四小時，車位有限</div>
+    <!-- <div class="note">啤酒暢飲，建議搭乘公共交通</div> -->
+    
     <h2>行程表</h2>
     <div class="schedule">
       <table>
