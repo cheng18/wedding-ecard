@@ -78,10 +78,20 @@
     }
 
     .name {
+      font-family: 'Noto Serif TC', serif;
       font-size: 1.1em;
       color: #7c4a1e;
       margin: 0.2em 0;
       letter-spacing: 0.05em;
+    }
+
+    .name-main {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.6em;
+      color: #7c4a1e;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      display: inline-block;
     }
 
     /* ====== Schedule Table ====== */
@@ -143,7 +153,7 @@
     .invitation-img {
       display: block;
       margin: 0 auto;
-      max-width: 80%;
+      max-width: 60%;
       height: auto;
     }
 
@@ -173,6 +183,7 @@
       border-left: 4px solid #ffe066;
     }
   </style>
+  <!-- AddEvent theme css --><link rel="stylesheet" href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css" type="text/css" media="all" />
 </head>
 <body>
   <div class="container">
@@ -183,13 +194,13 @@
         <div class="wedding-names-row">
           <div class="wedding-names-col">
             <div class="role">新郎</div>
-            <div class="name">黃晧誠</div>
+            <div class="name-main">黃晧誠</div>
             <div class="role" style="margin-top:1em;">男方主婚人</div>
             <div class="name">黃邁綸、鐘靜慧</div>
           </div>
           <div class="wedding-names-col">
             <div class="role">新娘</div>
-            <div class="name">陳映璉</div>
+            <div class="name-main">陳映璉</div>
             <div class="role" style="margin-top:1em;">女方主婚人</div>
             <div class="name">陳進益、謝秀毓</div>
           </div>
@@ -197,11 +208,18 @@
         <div style="margin-top:1.6em;">
           <div class="date">2025 年 11 月 2 日 週日 午宴</div>
           <div class="venue">台北萬豪酒店 36F 寰宇廳</div>
-          <a href="20251102_wedding_invitation.ics"
-            download="20251102_wedding_invitation.ics"
-            class="btn-calendar">
+          <!-- AddEvent Button Start -->
+          <div title="Add to Calendar" class="addeventatc" data-styling="none" style="margin-top:0.3em;background: #b35c1e;">
             Add to Calendar
-          </a>
+            <span class="addeventatc_icon"></span>
+            <span class="start">11/02/2025 11:30 AM</span>
+            <span class="end">11/02/2025 02:00 PM</span>
+            <span class="timezone">Asia/Taipei</span>
+            <span class="title">婚宴 - 映璉 & 晧誠</span>
+            <span class="description">席設：36F 寰宇廳\n喜帖：https://cheng18.github.io/wedding-ecard/</span>
+            <span class="location">台北萬豪酒店, 台北市中山區樂群二路199號</span>
+          </div>
+          <!-- AddEvent Button End -->
         </div>
       </div>
     </div>
@@ -246,5 +264,7 @@
       </table>
     </div>
   </div>
+  <!-- AddEvent JS file -->
+  <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"></script>
 </body>
 </html>
